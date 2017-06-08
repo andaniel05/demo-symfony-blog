@@ -29,6 +29,7 @@ class ArticleArticleCategoryFixtures extends AbstractFixture
         $manager->persist($category1);
         $manager->persist($article1);
         $manager->persist($article2);
+        $manager->flush();
 
         $this->setReference('category1', $category1);
         $this->setReference('article1', $article1);

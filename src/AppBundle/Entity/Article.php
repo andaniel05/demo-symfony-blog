@@ -51,7 +51,7 @@ class Article
     private $date;
 
     /**
-     * @ORM\ManyToMany(targetEntity="ArticleCategory", mappedBy="articles")
+     * @ORM\ManyToMany(targetEntity="ArticleCategory")
      */
     private $categories;
 

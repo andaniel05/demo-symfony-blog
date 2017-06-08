@@ -8,8 +8,8 @@ use AppBundle\Entity\Article;
 class ArticleTest extends TestCase
 {
     /**
-     * Prueba que la fecha de los artículos es el momento actual
-     * por defecto.
+     * Prueba que por defecto la fecha de los artículos se corresponde con el
+     * momento actual.
      */
     public function testDateIsCurrentTimeByDefault()
     {

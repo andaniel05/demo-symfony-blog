@@ -2,22 +2,20 @@
 
 namespace Tests\AppBundle\Database;
 
-use Liip\FunctionalTestBundle\Test\WebTestCase;
 use Tests\AppBundle\Database\DataFixtures\ArticleArticleCategoryFixtures;
 
-class ArticleArticleCategoryRelationshipTest extends WebTestCase
+class ArticleArticleCategoryRelationshipTest extends RelationshipTestCase
 {
     public function setUp()
     {
-        $this->fixtures = $this->loadFixtures([
-            ArticleArticleCategoryFixtures::class
-        ])->getReferenceRepository();
+        $this->loadDataFixtures([ArticleArticleCategoryFixtures::class]);
 
-        $this->em = $this->getContainer()->get('doctrine')->getManager();
-
-        $this->category1 = $this->fixtures->getReference('category1');
-        $this->article1 = $this->fixtures->getReference('article1');
-        $this->article2 = $this->fixtures->getReference('article2');
+        $this->category1 = $this->doctrine->getRepository('AppBundle:ArticleCategory')
+            ->find($this->fixtures->getReference('category1')->getId());
+        $this->article1 = $this->doctrine->getRepository('AppBundle:Article')
+            ->find($this->fixtures->getReference('article1')->getId());
+        $this->article2 = $this->doctrine->getRepository('AppBundle:Article')
+            ->find($this->fixtures->getReference('article2')->getId());
     }
 
     public function testRelationships()
@@ -28,5 +26,28 @@ class ArticleArticleCategoryRelationshipTest extends WebTestCase
         $this->assertContains($this->article2, $category1Articles);
         $this->assertContains($this->category1, $this->article1->getCategories());
         $this->assertContains($this->category1, $this->article2->getCategories());
+    }
+
+    public function testCategoryIsUnregisteredFromArticleWhenCategoryIsRemoved()
+    {
+        $this->em->remove($this->category1);
+        $this->em->flush();
+
+        $article1 = $this->doctrine->getRepository('AppBundle:Article')
+            ->find($this->fixtures->getReference('article1')->getId());
+
+        $this->assertEquals(0, $article1->getCategories()->count());
+    }
+
+    public function testArticleIsUnregisteredFromCategoryWhenArticleIsRemoved()
+    {
+        $this->em->remove($this->article1);
+        $this->em->flush();
+
+        $category1 = $this->doctrine->getRepository('AppBundle:ArticleCategory')
+            ->find($this->fixtures->getReference('category1')->getId());
+
+        $this->assertEquals(1, $category1->getArticles()->count());
+        $this->assertContains($this->article2, $category1->getArticles());
     }
 }
