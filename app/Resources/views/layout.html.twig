@@ -1,0 +1,27 @@
+
+{% extends 'base.html.twig' %}
+
+{% block layout_styles %}
+    <link rel="stylesheet" href="{{ asset('css/1-col-portfolio.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <!-- Begin navigation -->
+    {% include 'includes/navigation.html.twig' %}
+    <!-- End navigation -->
+
+    <div class="container">
+
+        <!-- Begin page content -->
+        {% block content %}
+        {% endblock %}
+        <!-- End page content -->
+
+        <!-- Begin footer -->
+        {% include 'includes/footer.html.twig' %}
+        <!-- End footer -->
+
+    </div>
+
+{% endblock %}
