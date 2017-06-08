@@ -3,14 +3,15 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * PostCategory
+ * ArticleCategory
  *
- * @ORM\Table(name="post_category")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\PostCategoryRepository")
+ * @ORM\Table(name="article_category")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleCategoryRepository")
  */
-class PostCategory
+class ArticleCategory
 {
     /**
      * @var int
@@ -29,12 +30,24 @@ class PostCategory
     private $name;
 
     /**
+     * @ORM\ManyToMany(targetEntity="Article")
+     */
+    private $articles;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->articles = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -51,7 +64,7 @@ class PostCategory
      *
      * @param string $name
      *
-     * @return PostCategory
+     * @return ArticleCategory
      */
     public function setName($name)
     {
@@ -75,7 +88,7 @@ class PostCategory
      *
      * @param string $description
      *
-     * @return PostCategory
+     * @return ArticleCategory
      */
     public function setDescription($description)
     {

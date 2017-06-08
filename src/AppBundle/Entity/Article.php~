@@ -3,14 +3,15 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Post
+ * Article
  *
- * @ORM\Table(name="post")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\PostRepository")
+ * @ORM\Table(name="article")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ArticleRepository")
  */
-class Post
+class Article
 {
     /**
      * @var int
@@ -49,6 +50,18 @@ class Post
      */
     private $date;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="ArticleCategory")
+     */
+    private $categories;
+
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->categories = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -65,7 +78,7 @@ class Post
      *
      * @param string $title
      *
-     * @return Post
+     * @return Article
      */
     public function setTitle($title)
     {
@@ -89,7 +102,7 @@ class Post
      *
      * @param string $content
      *
-     * @return Post
+     * @return Article
      */
     public function setContent($content)
     {
@@ -113,7 +126,7 @@ class Post
      *
      * @param string $excerpt
      *
-     * @return Post
+     * @return Article
      */
     public function setExcerpt($excerpt)
     {
@@ -137,7 +150,7 @@ class Post
      *
      * @param \DateTime $date
      *
-     * @return Post
+     * @return Article
      */
     public function setDate($date)
     {
