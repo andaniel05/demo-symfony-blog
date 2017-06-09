@@ -1,0 +1,546 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Article",
+				"ArticleCategory"
+			],
+			[
+				"componen",
+				"componentId"
+			],
+			[
+				"server",
+				"serverUpdates"
+			],
+			[
+				"reques",
+				"requestBody"
+			],
+			[
+				"componet",
+				"component1"
+			],
+			[
+				"request",
+				"requestData"
+			],
+			[
+				"event",
+				"eventName"
+			],
+			[
+				"test",
+				"testData"
+			],
+			[
+				"expe",
+				"expectedData"
+			],
+			[
+				"sino",
+				"sinonXhr"
+			],
+			[
+				"ti",
+				"this"
+			],
+			[
+				"register",
+				"registerUpdate"
+			],
+			[
+				"to",
+				"token1"
+			],
+			[
+				"liter",
+				"literal"
+			],
+			[
+				"com",
+				"component1"
+			],
+			[
+				"compo",
+				"componentId"
+			],
+			[
+				"co",
+				"componentId"
+			],
+			[
+				"js",
+				"jsAppTests"
+			],
+			[
+				"Abstra",
+				"AbstractComponent"
+			],
+			[
+				"create",
+				"createFromJSON"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"data",
+				"dataAction1"
+			],
+			[
+				"clientU",
+				"clientUpdate"
+			],
+			[
+				"clien",
+				"clientUpdate"
+			],
+			[
+				"Update",
+				"UpdateInterface"
+			],
+			[
+				"update",
+				"updateResults"
+			],
+			[
+				"getMock",
+				"getMockForAbstractClass"
+			],
+			[
+				"Abs",
+				"AbstractAppAsset"
+			],
+			[
+				"Abstr",
+				"AbstractApp"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "project",
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Close"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"block",
+				"Snippet: block"
+			],
+			[
+				"set twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"php",
+				"Snippet: andaniel-phpunit"
+			],
+			[
+				"set types",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"set type",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"set typescr",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"PHPUnit: ",
+				"PHPUnit: Run with params"
+			],
+			[
+				"phpunt",
+				"Snippet: andaniel-phpunit"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"package ",
+				"Package Control: Enable Package"
+			],
+			[
+				"set JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"set javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ste html",
+				"Set Syntax: HTML"
+			],
+			[
+				"phpunit",
+				"Snippet: andaniel-phpunit"
+			],
+			[
+				"snipp",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"bracket",
+				"BracketHighlighter: Toggle String Bracket Escape Mode"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/demo-symfony-blog.sublime-project",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Controller/DefaultControllerTest.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Database/RelationshipTestCase.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Database/ArticleArticleCategoryRelationshipTest.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Controller/DefaultController.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Entity/CoinTest.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Entity/LinkTest.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Entity/FaqCategoryTest.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Entity/UserTest.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Entity/ProfessionalProfileTest.php",
+		"/D/Andy/Trabajos/BL/quepisos/src/AppBundle/Tests/Controller/PropertyControllerTest.php",
+		"/C/Users/ANDANIEL/Desktop/startbootstrap-blog-post-1.0.4/index.html",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/DataFixtures/ORM/LoadData.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/AppBundle.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/DataFixtures/ORM/lorem.txt",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/DataFixtures/ORM/excerpt.txt",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Entity/ArticleTest.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Entity/Article.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/page-index.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/layout.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/base.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/translations/messages.en.yml",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/includes/navigation.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/includes/footer.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/Resources/views/default/index.html.twig",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/config/config.yml",
+		"/C/Users/ANDANIEL/Desktop/startbootstrap-1-col-portfolio-gh-pages/index.html",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Entity/ArticleCategory.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/.gitignore",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/web/assets/vendor/bootstrap/dist/js/bootstrap.js",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/.bowerrc",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Repository/ArticleCategoryRepository.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Database/DataFixtures/ArticleArticleCategoryFixtures.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Repository/ArticleRepository.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Repository/PostCategoryRepository.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Repository/PostRepository.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/phpunit.xml.dist",
+		"/D/Instalados/php/php-7.1.1-Win32-VC14-x64/php.ini",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/config/config_test.yml",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/AppKernel.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/vendor/liip/functional-test-bundle/Test/WebTestCase.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Database/SchemaTest.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/tests/AppBundle/Database/DatabaseTest.pph.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Entity/PostCategory.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/src/AppBundle/Entity/Post.php",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/README.md",
+		"/C/Users/ANDANIEL/Desktop/demo-symfony-blog/app/config/parameters.yml",
+		"/D/Andy/Trabajos/BL/quepisos/composer.json",
+		"/D/Andy/Trabajos/BL/quepisos/.gitignore",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/GlueApps.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/package.json",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/AbstractAppTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tsconfig.json",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/webpack.config.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/TypeScriptSources/App.ts",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/AbstractAppAsset.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/AbstractScriptAsset.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/GlueAppsScript.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/AbstractApp.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/AppEvents.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/TestApp.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/GlueAppsScriptTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/phpunit.xml",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/TypeScriptSources/Component.ts",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Update/Update.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/TypeScriptSources/GlueApps.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Event/ResponseEvent.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Event/RequestEvent.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Event/Event.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/FrontEnd/test.GlueApps.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/GlueApps.App.ts",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/GlueApps.Request.ts",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/GlueApps.App.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Component/AbstractComponentTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Component/AbstractComponent.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/npm-debug.log",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Request/Request.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Update/UpdateInterface.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/Apps/GlueAppsScriptTestApp.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Request/RequestInterface.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/AppSourceScript.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/JavaScriptTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/Apps/JavaScriptTestApp.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/FrontEnd/test.app.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/FrontEnd/app.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Asset/AbstractAppAssetTest.php",
+		"/D/Instalados/Sublime Text 3 Portable/Data/Packages/User/SimplePHPUnit.sublime-settings",
+		"/D/Instalados/Sublime Text 3 Portable/Data/Packages/SimplePHPUnit/SimplePHPUnit.sublime-settings",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/composer.json",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/AbstractPage.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Sidebar/Sidebar.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Component/DummyComponent1.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Component/DummyComponent2.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/Sidebar/Sidebar.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/Component/AbstractComponent.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/HtmlInterface.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/.gitignore",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/composer.lock",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Update/UpdateTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Update/UpdateResultTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Unit/Response/ResponseTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/FrontEnd/test.app.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/ScriptAsset.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/Apps/MochaJSUnitTesting.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/JavaScriptUnitTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/Apps/index.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/Asset/Asset.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/tests/AbstractPageTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/tests/Asset/AssetsTraitTests.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/tests/Asset/AssetsTraitTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/src/Asset/AssetsTrait.php",
+		"/D/Instalados/Sublime Text 3 Portable/Data/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/FrontEnd/index.html",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Asset/AppAsset.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Frontend/index.html",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Frontend/test.app.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/src/Frontend/app.js",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/TestCase.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/GitHubTest.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Frontend/test.js",
+		"/D/Instalados/Selenium/selenium-server.bat",
+		"/D/Instalados/Selenium/java -jar selenium-server-standalone-2.53.1.jar",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/logs/results.xml",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/tests/Functional/TitlePageTest.php",
+		"/C/Users/ANDANIEL/Desktop/temp/index.php",
+		"/D/Instalados/Sublime Text 3 Portable/Data/Packages/User/php.sublime-build",
+		"/C/Users/ANDANIEL/Desktop/prueba.php",
+		"/D/Andy/Repositorios/PlatformPHP/HybridApps/vendor/platform-php/composed-views/tests/Asset/AssetTest.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 123.0,
+		"where_history":
+		[
+			"D:\\Andy\\Repositorios\\PlatformPHP\\HybridApps",
+			"D:\\Andy\\Repositorios\\PlatformPHP\\HybridApps\\tests",
+			"D:\\Andy\\Repositorios\\PlatformPHP\\HybridApps"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vendor",
+			"xdebug",
+			"console",
+			"#registerU",
+			"hybrid",
+			"render",
+			"\\'",
+			"chai.js",
+			"Functional",
+			"curl",
+			"PlatformPHP\\HybridApps\\Tests",
+			"Event",
+			"addServer",
+			"testgetUpdateResults",
+			"getServerUpdateResults",
+			"addServerUpdateResult"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"Selenium",
+			"PlatformPHP\\\\HybridApps\\\\Tests\\\\Unit",
+			"PlatformPHP\\HybridApps\\Tests\\Unit",
+			"testGetUpdateResults",
+			"getUpdateResults",
+			"addUpdateResult"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 635.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "demo-symfony-blog.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Instalados\\Sublime Text 3 Portable\\demo-symfony-blog.sublime-project"
+			]
+		],
+		"width": 425.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

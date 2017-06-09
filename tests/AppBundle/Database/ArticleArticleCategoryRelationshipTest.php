@@ -2,13 +2,13 @@
 
 namespace Tests\AppBundle\Database;
 
-use Tests\AppBundle\Database\DataFixtures\ArticleArticleCategoryFixtures;
-
 class ArticleArticleCategoryRelationshipTest extends RelationshipTestCase
 {
     public function setUp()
     {
-        $this->loadDataFixtures([ArticleArticleCategoryFixtures::class]);
+        $this->loadDataFixtures([
+            DataFixtures\ArticleArticleCategoryFixtures::class
+        ]);
 
         $this->category1 = $this->doctrine->getRepository('AppBundle:ArticleCategory')
             ->find($this->fixtures->getReference('category1')->getId());
