@@ -1,0 +1,14 @@
+
+site:
+  name: Demo Symfony Blog
+  title: Andaniel05 | Demo Symfony Blog
+
+footer:
+    copyright: Demo Symfony Blog, by Andy D. Navarro Taño.
+
+button:
+    load_more_articles: Load more articles
+    read_more: Read more
+
+link:
+    admin: Admin

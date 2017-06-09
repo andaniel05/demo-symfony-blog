@@ -4,11 +4,14 @@
 {% block content %}
 
     <!-- Page Heading -->
-    <div class="row">
+    <div class="row" style="margin: 50px 0px">
         <div class="col-lg-12">
-            <h1 class="page-header">Page Heading
-                <small>Secondary Text</small>
-            </h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="javascript:;">All</a></li>
+                <li><a href="javascript:;">Category1</a></li>
+                <li><a href="javascript:;">Category2</a></li>
+                <li><a href="javascript:;">Category3</a></li>
+            </ul>
         </div>
     </div>
     <!-- /.row -->
@@ -24,7 +27,7 @@
             <h3>Project One</h3>
             <h4>Subheading</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="javascript:;">{{ 'button.read_more'|trans }} <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
     </div>
     <!-- /.row -->
@@ -104,35 +107,13 @@
 
     <hr>
 
-    <!-- Pagination -->
+    <!-- Begin load more articles -->
     <div class="row text-center">
         <div class="col-lg-12">
-            <ul class="pagination">
-                <li>
-                    <a href="#">&laquo;</a>
-                </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">&raquo;</a>
-                </li>
-            </ul>
+            <a href="javascript:;" class="btn btn-primary btn-lg">{{ 'button.load_more_articles'|trans }}</a>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- End load more articles -->
 
     <hr>
 
