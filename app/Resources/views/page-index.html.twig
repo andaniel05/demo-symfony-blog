@@ -123,8 +123,17 @@
     <script src="{{ asset('assets/vendor/gasparesganga-jquery-loading-overlay/src/loadingoverlay.min.js') }}"></script>
     <script>
     $(document).ready(function() {
-        $.LoadingOverlaySetup({ color : "rgba(255, 255, 255, 1)" });
-        $.LoadingOverlay("show");
+
+        $.LoadingOverlaySetup({
+            color : "rgba(255, 255, 255, 1)"
+        });
+
+        $(document).ajaxStart(function() {
+            $.LoadingOverlay("show");
+        });
+        $(document).ajaxStop(function() {
+            $.LoadingOverlay("hide");
+        });
     });
     </script>
 {% endblock %}
