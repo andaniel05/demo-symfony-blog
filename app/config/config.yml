@@ -76,3 +76,12 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
+
+# VichUploaderBundle
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        article_image:
+            uri_prefix:         /images/articles
+            upload_destination: '%kernel.root_dir%/../web/images/articles'
