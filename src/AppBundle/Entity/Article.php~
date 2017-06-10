@@ -56,11 +56,18 @@ class Article
     private $categories;
 
     /**
+    * @ORM\ManyToOne(targetEntity="User", inversedBy="articles")
+    * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+    */
+    private $author;
+
+    /**
      * Constructor.
      */
     public function __construct()
     {
         $this->categories = new ArrayCollection();
+        $this->date = new \DateTime();
     }
 
     /**
@@ -152,7 +159,7 @@ class Article
      *
      * @return Article
      */
-    public function setDate($date)
+    public function setDate(\DateTime $date)
     {
         $this->date = $date;
 
@@ -164,9 +171,74 @@ class Article
      *
      * @return \DateTime
      */
-    public function getDate()
+    public function getDate() : \DateTime
     {
         return $this->date;
     }
-}
 
+    /**
+     * Add category
+     *
+     * @param \AppBundle\Entity\ArticleCategory $category
+     *
+     * @return Article
+     */
+    public function addCategory(\AppBundle\Entity\ArticleCategory $category)
+    {
+        $this->categories[] = $category;
+
+        if ( ! $category->getArticles()->contains($this)) {
+            $category->addArticle($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Remove category
+     *
+     * @param \AppBundle\Entity\ArticleCategory $category
+     */
+    public function removeCategory(\AppBundle\Entity\ArticleCategory $category)
+    {
+        $this->categories->removeElement($category);
+    }
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Set author
+     *
+     * @param \AppBundle\Entity\User $author
+     *
+     * @return Article
+     */
+    public function setAuthor(\AppBundle\Entity\User $author = null)
+    {
+        $this->author = $author;
+
+        if ( ! $author->getArticles()->contains($this)) {
+            $author->addArticle($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get author
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+}

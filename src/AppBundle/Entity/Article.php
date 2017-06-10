@@ -56,6 +56,12 @@ class Article
     private $categories;
 
     /**
+    * @ORM\ManyToOne(targetEntity="User", inversedBy="articles")
+    * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+    */
+    private $author;
+
+    /**
      * Constructor.
      */
     public function __construct()
@@ -206,5 +212,33 @@ class Article
     public function getCategories()
     {
         return $this->categories;
+    }
+
+    /**
+     * Set author
+     *
+     * @param \AppBundle\Entity\User $author
+     *
+     * @return Article
+     */
+    public function setAuthor(\AppBundle\Entity\User $author = null)
+    {
+        $this->author = $author;
+
+        if ( ! $author->getArticles()->contains($this)) {
+            $author->addArticle($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get author
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getAuthor()
+    {
+        return $this->author;
     }
 }
