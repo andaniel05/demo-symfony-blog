@@ -40,8 +40,10 @@ class DefaultControllerTest extends WebTestCase
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertEquals(
-            $article->getTitle(),
-            $crawler->filter('h1.title-article')->text()
+            $article->getTitle(), $crawler->filter('h1.title-article')->text()
+        );
+        $this->assertEquals(
+            $article->getContent(), trim($crawler->filter('.content-article')->text())
         );
     }
 }

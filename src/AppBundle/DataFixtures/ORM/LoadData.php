@@ -11,8 +11,8 @@ class LoadData extends AbstractFixture
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;
-        $this->lorem   = file_get_contents(__DIR__ . '/lorem.txt');
-        $this->excerpt = file_get_contents(__DIR__ . '/excerpt.txt');
+        $this->lorem   = nl2br(file_get_contents(__DIR__ . '/lorem.txt'));
+        $this->excerpt = nl2br(file_get_contents(__DIR__ . '/excerpt.txt'));
 
         $this->loadCategories();
         $this->loadArticles();
