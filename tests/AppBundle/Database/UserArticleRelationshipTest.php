@@ -27,4 +27,28 @@ class UserArticleRelationshipTest extends RelationshipTestCase
         $this->assertContains($this->article1, $user1Articles);
         $this->assertContains($this->article2, $user1Articles);
     }
+
+    public function testUserArticlesAreRemovedWhenUserAuthorIsRemoved()
+    {
+        $this->em->remove($this->user1);
+        $this->em->flush();
+
+        $articles = $this->doctrine->getRepository('AppBundle:Article')
+            ->findAll();
+
+        $this->assertCount(0, $articles);
+    }
+
+    public function testArticleIsUnregisteredFromAuthorWhenIsRemoved()
+    {
+        $this->em->remove($this->article1);
+        $this->em->flush();
+
+        $user1 = $this->doctrine->getRepository('AppBundle:User')
+            ->find($this->fixtures->getReference('user1')->getId());
+        $user1Articles = $user1->getArticles();
+
+        $this->assertCount(1, $user1Articles);
+        $this->assertContains($this->article2, $user1Articles);
+    }
 }
