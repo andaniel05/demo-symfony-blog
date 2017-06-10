@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "vue": "^2.3.4",
-    "axios": "^0.16.2"
+    "axios": "^0.16.2",
+    "gasparesganga-jquery-loading-overlay": "^1.5.3"
   }
 }
