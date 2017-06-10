@@ -17,7 +17,7 @@ class ArticlePageDataFixtures extends AbstractFixture
 
         $article2 = new Article();
         $article2->setTitle('Article2 Title')
-            ->setContent('Article2 Content')
+            ->setContent('<p>Article2 Content</p>')
             ->setExcerpt('Article2 Excerpt');
 
         $manager->persist($article1);
