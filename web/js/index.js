@@ -5,8 +5,14 @@ var app = new Vue({
         articles: [],
         categories: [],
         incomplete: false,
-    }
+    },
 });
+
+app.fetchCategories = function() {
+    $.getJSON('/api/categories', function(categories) {
+        app.categories = categories;
+    });
+};
 
 $(document).ready(function() {
 
@@ -20,4 +26,6 @@ $(document).ready(function() {
     $(document).ajaxStop(function() {
         $.LoadingOverlay("hide");
     });
+
+    app.fetchCategories();
 });
