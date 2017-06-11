@@ -144,4 +144,9 @@ class ArticleCategory
     {
         return $this->articles;
     }
+
+    public function __toString() : string
+    {
+        return $this->name;
+    }
 }

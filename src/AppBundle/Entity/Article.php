@@ -65,21 +65,21 @@ class Article
     private $author;
 
     /**
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="imageName", size="imageSize")
+     * @Vich\UploadableField(mapping="article_images", fileNameProperty="imageName")
      *
      * @var File
      */
     private $imageFile;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      *
      * @var string
      */
     private $imageName;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", nullable=true)
      *
      * @var \DateTime
      */
@@ -88,14 +88,14 @@ class Article
     /**
      * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
      *
-     * @return Product
+     * @return Article
      */
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
 
         if ($image) {
-            $this->updatedAt = new \DateTimeImmutable();
+            $this->updatedAt = new \DateTime('now');
         }
 
         return $this;
@@ -112,7 +112,7 @@ class Article
     /**
      * @param string $imageName
      *
-     * @return Product
+     * @return Article
      */
     public function setImageName($imageName)
     {
@@ -127,6 +127,11 @@ class Article
     public function getImageName()
     {
         return $this->imageName;
+    }
+
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 
     /**
@@ -308,5 +313,10 @@ class Article
     public function getAuthor()
     {
         return $this->author;
+    }
+
+    public function __toString() : string
+    {
+        return $this->title;
     }
 }
