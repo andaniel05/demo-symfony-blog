@@ -1,4 +1,15 @@
 
+$.LoadingOverlaySetup({
+    color : "rgba(255, 255, 255, 1)"
+});
+
+$(document).ajaxStart(function() {
+    $.LoadingOverlay("show");
+});
+$(document).ajaxStop(function() {
+    $.LoadingOverlay("hide");
+});
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -16,15 +27,19 @@ app.fetchCategories = function() {
 
 $(document).ready(function() {
 
-    $.LoadingOverlaySetup({
-        color : "rgba(255, 255, 255, 1)"
-    });
+    var $tabs = $('#tabs');
 
-    $(document).ajaxStart(function() {
-        $.LoadingOverlay("show");
-    });
-    $(document).ajaxStop(function() {
-        $.LoadingOverlay("hide");
+    $tabs.activateTab = function($tab) {
+
+        var $currentActive = $tabs.find('li.active');
+        $currentActive.removeClass('active');
+
+        $tab.addClass('active');
+    };
+
+    $tabs.on('click', 'li', function() {
+        var $this = $(this);
+        $tabs.activateTab($this);
     });
 
     app.fetchCategories();
