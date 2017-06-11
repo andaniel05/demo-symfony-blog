@@ -27,14 +27,14 @@ class ArticlePageDataFixtures extends AbstractFixture
             ->setContent('Article1 Content')
             ->setExcerpt('Article1 Excerpt')
             ->setAuthor($user1)
-            ->setImageName('http://localhost/image1.jpg');
+            ->setImageName('image1.jpg');
 
         $article2 = new Article();
         $article2->setTitle('Article2 Title')
             ->setContent('Article2 Content')
             ->setExcerpt('Article2 Excerpt')
             ->setAuthor($user2)
-            ->setImageName('http://localhost/image2.jpg');
+            ->setImageName('image2.jpg');
 
         $manager->persist($user1);
         $manager->persist($user2);

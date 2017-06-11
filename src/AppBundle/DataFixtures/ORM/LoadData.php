@@ -72,6 +72,7 @@ class LoadData extends AbstractFixture
             ->setContent($this->lorem)
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category1)
+            ->setImageName('demo/1.jpg')
             ->setAuthor($this->author1);
 
         $this->article2 = $article2 = new Article();
@@ -79,6 +80,7 @@ class LoadData extends AbstractFixture
             ->setContent($this->lorem)
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category2)
+            ->setImageName('demo/2.jpg')
             ->setAuthor($this->author1);
 
         $this->article3 = $article3 = new Article();
@@ -86,6 +88,7 @@ class LoadData extends AbstractFixture
             ->setContent($this->lorem)
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category3)
+            ->setImageName('demo/3.jpg')
             ->setAuthor($this->author1);
 
         $this->article4 = $article4 = new Article();
@@ -94,6 +97,7 @@ class LoadData extends AbstractFixture
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category1)
             ->addCategory($this->category2)
+            ->setImageName('demo/4.jpg')
             ->setAuthor($this->author1);
 
         $this->article5 = $article5 = new Article();
@@ -102,6 +106,7 @@ class LoadData extends AbstractFixture
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category1)
             ->addCategory($this->category3)
+            ->setImageName('demo/5.jpg')
             ->setAuthor($this->author2);
 
         $this->article6 = $article6 = new Article();
@@ -110,6 +115,7 @@ class LoadData extends AbstractFixture
             ->setExcerpt($this->excerpt)
             ->addCategory($this->category2)
             ->addCategory($this->category3)
+            ->setImageName('demo/6.jpg')
             ->setAuthor($this->author2);
 
         $this->article7 = $article7 = new Article();
@@ -119,6 +125,7 @@ class LoadData extends AbstractFixture
             ->addCategory($this->category1)
             ->addCategory($this->category2)
             ->addCategory($this->category3)
+            ->setImageName('demo/7.jpg')
             ->setAuthor($this->author2);
 
         $this->manager->persist($article1);

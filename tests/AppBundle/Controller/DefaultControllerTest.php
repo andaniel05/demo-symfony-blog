@@ -50,7 +50,7 @@ class DefaultControllerTest extends WebTestCase
             $article->getAuthor()->getUsername(),
             $crawler->filter('.author-article')->text()
         );
-        $this->assertEquals(
+        $this->assertStringEndsWith(
             $article->getImageName(),
             $crawler->filter('.image-article')->attr('src')
         );
