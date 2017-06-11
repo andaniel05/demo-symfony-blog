@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Article;
 
-class DefaultController extends Controller
+class BlogController extends Controller
 {
     /**
      * @Route("/", name="homepage")

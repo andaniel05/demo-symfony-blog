@@ -4,7 +4,7 @@ namespace Tests\AppBundle\Controller;
 
 use Liip\FunctionalTestBundle\Test\WebTestCase;
 
-class DefaultControllerTest extends WebTestCase
+class BlogControllerTest extends WebTestCase
 {
     public function testIndex()
     {
