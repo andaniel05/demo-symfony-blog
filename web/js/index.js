@@ -25,6 +25,12 @@ app.fetchCategories = function() {
     });
 };
 
+app.fetchArticles = function() {
+    $.getJSON('/api/articles', function(articles) {
+        app.articles = articles;
+    });
+};
+
 $(document).ready(function() {
 
     var $tabs = $('#tabs');
@@ -43,4 +49,5 @@ $(document).ready(function() {
     });
 
     app.fetchCategories();
+    app.fetchArticles();
 });

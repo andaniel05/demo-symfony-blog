@@ -23,7 +23,7 @@
         <div class="row" v-for="article in articles">
             <div class="col-md-7">
                 <a href="javascript:;">
-                    <img class="img-responsive" src="" alt="">
+                    <img class="img-responsive" v-bind:src="article.thumbnail" alt="">
                 </a>
             </div>
             <div class="col-md-5">
@@ -33,8 +33,11 @@
                         <a href="javascript:;">{{ category.name }}</a>
                     </li>
                 </ul>
-                <p>{{ article.extract }}</p>
-                <a class="btn btn-primary" href="javascript:;">{{ 'button.read_more'|trans }} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <p v-html="article.excerpt"></p>
+                <a class="btn btn-primary" v-bind:href="article.url">
+                    {% endverbatim %}{{ 'button.read_more'|trans }}{% verbatim %}
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
         <!-- /.row -->
