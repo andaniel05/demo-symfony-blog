@@ -20,7 +20,7 @@
 
     {% verbatim %}
         <!-- Project One -->
-        <div class="row" v-for="article in articles">
+        <div class="row" v-for="article in articles" style="margin-bottom:50px">
             <div class="col-md-7">
                 <a href="javascript:;">
                     <img class="img-responsive" v-bind:src="article.thumbnail" alt="">
@@ -28,9 +28,9 @@
             </div>
             <div class="col-md-5">
                 <h3>{{ article.title }}</h3>
-                <ul>
+                <ul class="list-inline">
                     <li v-for="category in article.categories">
-                        <a href="javascript:;">{{ category.name }}</a>
+                        <a href="javascript:;" class="btn btn-default btn-sm">{{ category.name }}</a>
                     </li>
                 </ul>
                 <p v-html="article.excerpt"></p>
