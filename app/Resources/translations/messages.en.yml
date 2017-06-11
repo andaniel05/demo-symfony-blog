@@ -12,3 +12,6 @@ button:
 
 link:
     admin: Admin
+
+label:
+    author: 'Author: %author%'
