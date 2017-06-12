@@ -16,7 +16,14 @@ var app = new Vue({
         articles: [],
         categories: [],
         incomplete: false,
+        currentPage: 1,
+        currentCategory: null,
     },
+    methods: {
+        loadMore: function() {
+            app.fetchArticles(app.paginationData.next);
+        }
+    }
 });
 
 app.fetchCategories = function() {
@@ -25,9 +32,23 @@ app.fetchCategories = function() {
     });
 };
 
-app.fetchArticles = function() {
-    $.getJSON('/api/articles', function(articles) {
-        app.articles = articles;
+app.fetchArticles = function(page = 1) {
+
+    var reqData = {
+        page: page,
+        category: app.currentCategory,
+    };
+
+    $.getJSON('/api/articles', reqData, function(resp) {
+
+        app.articles = app.articles.concat(resp.articles);
+        app.paginationData = resp.paginationData;
+
+        if (app.paginationData.current < app.paginationData.endPage) {
+            app.incomplete = true;
+        } else {
+            app.incomplete = false;
+        }
     });
 };
 
@@ -48,6 +69,9 @@ $(document).ready(function() {
         $tabs.activateTab($this);
     });
 
+});
+
+$(document).ready(function() {
     app.fetchCategories();
     app.fetchArticles();
 });
