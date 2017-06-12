@@ -55,6 +55,12 @@ $ php bin/console doctrine:fixtures:load
 $ php bin/console server:run
 ~~~
 
+## Administración
+
+Para acceder a la administración se deben usar las siguientes credenciales por defecto:
+* usuario: admin
+* password: admin
+
 ## Ejecutar tests
 
 Para correr los tests es necesario tener instalado previamente phpunit en su versión 6.0 o superior.
