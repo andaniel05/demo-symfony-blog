@@ -12,7 +12,7 @@ demo-symfony-blog
 
 1. Clonar proyecto.
 ~~~
-$ git clone <url>
+$ git clone https://github.com/andaniel05/demo-symfony-blog.git
 ~~~
 
 2. Instalar dependencias composer. Requiere tener instalado composer previamente.
