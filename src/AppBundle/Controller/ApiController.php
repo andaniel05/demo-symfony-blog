@@ -42,9 +42,15 @@ class ApiController extends Controller
         $cacheManager = $this->get('liip_imagine.cache.manager');
         $helper       = $this->container->get('vich_uploader.templating.helper.uploader_helper');
 
-        $em    = $this->get('doctrine.orm.entity_manager');
-        $dql   = "SELECT a FROM AppBundle:Article a";
-        $query = $em->createQuery($dql);
+        $query = $this->getDoctrine()->getRepository('AppBundle:Article')
+            ->createQueryBuilder('a');
+
+        $categoryId = $request->query->get('category');
+        if ($categoryId) {
+            $query->innerJoin('a.categories', 'c')
+                ->andWhere('c.id = :categoryId')
+                ->setParameter('categoryId', $categoryId);
+        }
 
         $paginator  = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
@@ -83,43 +89,4 @@ class ApiController extends Controller
 
         return new JsonResponse($data);
     }
-
-    // /**
-    //  * @Route("/articles", name="api_get_articles")
-    //  * @Method("GET")
-    //  */
-    // public function getArticlesAction(Request $request)
-    // {
-    //     $imagineCacheManager = $this->get('liip_imagine.cache.manager');
-    //     $helper = $this->container->get('vich_uploader.templating.helper.uploader_helper');
-
-    //     $articles = $this->getDoctrine()
-    //         ->getRepository('AppBundle:Article')
-    //         ->findAll();
-
-    //     $data = [];
-    //     foreach ($articles as $article) {
-
-    //         $categories = [];
-    //         foreach ($article->getCategories() as $category) {
-    //             $categories[] = [
-    //                 'id'   => $category->getId(),
-    //                 'name' => $category->getName(),
-    //             ];
-    //         }
-
-    //         $imagePath = $helper->asset($article, 'imageFile');
-
-    //         $data[] = [
-    //             'id'         => $article->getId(),
-    //             'title'      => $article->getTitle(),
-    //             'categories' => $categories,
-    //             'excerpt'    => $article->getExcerpt(),
-    //             'url'        => $this->generateUrl('article', ['id' => $article->getId()]),
-    //             'thumbnail'  => $imagineCacheManager->getBrowserPath($imagePath, 'article_thumbnail'),
-    //         ];
-    //     }
-
-    //     return new JsonResponse($data);
-    // }
 }

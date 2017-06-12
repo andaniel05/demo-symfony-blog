@@ -58,10 +58,18 @@ $(document).ready(function() {
 
     $tabs.activateTab = function($tab) {
 
+        if ($tab.hasClass('active')) return;
+
         var $currentActive = $tabs.find('li.active');
         $currentActive.removeClass('active');
-
         $tab.addClass('active');
+
+        var currentCategory = $tab.attr('data-category-id');
+        app.currentCategory = currentCategory || null;
+        app.currentPage = 1;
+        app.articles = [];
+
+        app.fetchArticles();
     };
 
     $tabs.on('click', 'li', function() {
