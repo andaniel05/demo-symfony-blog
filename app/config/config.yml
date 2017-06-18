@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: easyadmin.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -113,46 +114,3 @@ knp_paginator:
     template:
         pagination: 'KnpPaginatorBundle:Pagination:sliding.html.twig'     # sliding pagination controls template
         sortable: 'KnpPaginatorBundle:Pagination:sortable_link.html.twig' # sort link template
-
-# EasyAdminBundle
-easy_admin:
-    entities:
-
-        user:
-            class: AppBundle\Entity\User
-            form:
-                fields:
-                    - username
-                    - email
-                    - enabled
-                    - lastLogin
-                    - { property: 'plainPassword', type: 'text', type_options: { required: false } }
-                    - { property: 'roles', type: 'choice', type_options: { multiple: true, choices: { 'ROLE_AUTHOR': 'ROLE_AUTHOR', 'ROLE_ADMIN': 'ROLE_ADMIN' } } }
-
-        article:
-            class: AppBundle\Entity\Article
-
-            list:
-                fields:
-                    - { property: 'id' }
-                    - { property: 'title' }
-                    # - { property: 'content' }
-                    - { property: 'excerpt' }
-                    - { property: 'date' }
-                    - { property: 'categories' }
-                    - { property: 'author' }
-                    - { property: 'imageName', type: 'image', base_path: '%app.path.article_images%' }
-
-            form:
-                fields:
-                    - { property: 'id' }
-                    - { property: 'title' }
-                    - { property: 'content', type: 'ckeditor' }
-                    - { property: 'excerpt' }
-                    - { property: 'date' }
-                    - { property: 'categories' }
-                    - { property: 'author' }
-                    - { property: 'imageFile', type: 'vich_image' }
-
-        article_category:
-            class: AppBundle\Entity\ArticleCategory
