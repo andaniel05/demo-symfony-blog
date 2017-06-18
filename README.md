@@ -57,9 +57,19 @@ $ php bin/console server:run
 
 ## Administración
 
-Para acceder a la administración se deben usar las siguientes credenciales por defecto:
-* usuario: admin
-* password: admin
+Para acceder a la administración se debe usar alguna las siguientes credenciales por defecto:
+~~~
+usuario: admin
+password: admin
+~~~
+~~~
+usuario: author1
+password: author1
+~~~
+~~~
+usuario: author2
+password: author2
+~~~
 
 ## Ejecutar tests
 
