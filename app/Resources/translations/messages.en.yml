@@ -16,3 +16,11 @@ link:
 label:
     author: 'Author: %author%'
     date: Posted on %date%
+
+    input:
+        username: Username
+        password: Password
+
+page:
+    title:
+        login: Blog Login

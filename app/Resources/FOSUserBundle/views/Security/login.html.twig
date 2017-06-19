@@ -1,0 +1,41 @@
+
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <header><h1>{{ 'page.title.login'|trans }}</h1></header>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+
+                {% trans_default_domain 'FOSUserBundle' %}
+
+                {% if error %}
+                    <div id="alert-error" class="alert alert-danger alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        {{ error.messageKey|trans(error.messageData, 'security') }}
+                    </div>
+                {% endif %}
+
+                <form role="form" id="form-create-account" action="{{ path("fos_user_security_check") }}" method="post" >
+                    {% if csrf_token %}
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                    {% endif %}
+
+                    <div class="form-group">
+                        <label for="form-create-account-email">{{ 'label.input.username'|trans({}, 'messages') }}</label>
+                        <input type="text" class="form-control" id="form-create-account-email" name="_username" value="{{ last_username }}" required>
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label for="form-create-account-password">{{ 'security.login.password'|trans }}</label>
+                        <input type="password" class="form-control" name="_password" id="form-create-account-password" required>
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group clearfix">
+                        <button type="submit" name="_submit" class="btn pull-right btn-default" id="account-submit">{{ 'security.login.submit'|trans }}</button>
+                    </div><!-- /.form-group -->
+                </form>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+{% endblock %}
